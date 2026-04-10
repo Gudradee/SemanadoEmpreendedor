@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semana do Empreendedorismo — LEI Ibmec 2025</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-tag">DOCUMENTO CONFIDENCIAL — Liga de Empreendedorismo do IBMEC 2026</div>
+  <h1>SEMANA DO<br><em>EMPREENDEDORISMO</em></h1>
+  <div class="header-meta">
+    <div class="header-meta-item"><strong>4–8 MAIO</strong>DATAS DO EVENTO</div>
+    <div class="header-meta-item"><strong>12H</strong>HORÁRIO DIÁRIO</div>
+    <div class="header-meta-item"><strong>5</strong>PALESTRANTES</div>
+    <div class="header-meta-item"><strong>LEI</strong>LIGA DE EMPREENDEDORISMO DO IBMEC</div>
+    <div class="header-meta-item"><strong>4</strong>STARTUPS</div>
+  </div>
+  <div class="header-quote" id="header-quote">
+    "Aqueles que têm o privilégio de saber têm o dever de agir."
+  </div>
+</div>
+
+<!-- SIDEBAR TOGGLE -->
+<button class="sidebar-toggle" id="sidebar-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar">
+  <span></span><span></span><span></span>
+</button>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar" aria-label="Navegação por seções">
+  <div class="sidebar-header">
+    <span class="sidebar-brand">LEI — 2025</span>
+    <button class="sidebar-close" id="sidebar-close" aria-label="Fechar menu">&#x2715;</button>
+  </div>
+  <nav class="sidebar-nav">
+    <a class="nav-link" data-page="lineup"      href="#lineup">      <span class="nav-num">01</span><span class="nav-label">Line-up</span></a>
+    <a class="nav-link" data-page="moderadores" href="#moderadores"> <span class="nav-num">02</span><span class="nav-label">Moderadores</span></a>
+    <a class="nav-link" data-page="formato"     href="#formato">     <span class="nav-num">03</span><span class="nav-label">Formato</span></a>
+    <a class="nav-link" data-page="cronograma"  href="#cronograma">  <span class="nav-num">04</span><span class="nav-label">Cronograma</span></a>
+    <a class="nav-link" data-page="publicidade" href="#publicidade"> <span class="nav-num">05</span><span class="nav-label">Publicidade</span></a>
+    <a class="nav-link" data-page="startups"    href="#startups">    <span class="nav-num">06</span><span class="nav-label">Startups</span></a>
+    <a class="nav-link" data-page="patrocinio"  href="#patrocinio">  <span class="nav-num">07</span><span class="nav-label">Patrocínio</span></a>
+    <a class="nav-link" data-page="parcerias"   href="#parcerias">   <span class="nav-num">08</span><span class="nav-label">Parcerias</span></a>
+    <a class="nav-link" data-page="script"      href="#script">      <span class="nav-num">09</span><span class="nav-label">Script</span></a>
+    <a class="nav-link" data-page="areas"       href="#areas">       <span class="nav-num">10</span><span class="nav-label">Areas</span></a>
+    <a class="nav-link" data-page="custos"      href="#custos">      <span class="nav-num">11</span><span class="nav-label">Custos</span></a>
+    <a class="nav-link" data-page="vibe"        href="#vibe">        <span class="nav-num">12</span><span class="nav-label">Vibe</span></a>
+  </nav>
+</aside>
+
+<!-- OVERLAY (mobile) -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- ======================== SEÇÃO 1 — LINE-UP ======================== -->
+  <div class="section" data-page="lineup">
+    <div class="section-label">Seção 01</div>
+    <div class="section-title">Line-up dos palestrantes</div>
+
+    <!-- Timeline de convidados -->
+    <div class="timeline-wrap" id="timeline-wrap">
+      <svg class="timeline-svg" id="graph-svg" xmlns="http://www.w3.org/2000/svg"></svg>
+
+      <!-- 04 MAI — esquerda -->
+      <div class="tl-item" data-side="left" data-speaker="dc">
+        <div class="tl-card" tabindex="0">
+          <div class="tl-card-inner">
+            <div class="tl-card-front">
+              <div class="tl-day">04 MAI</div>
+              <div class="tl-name">Daniel Cavaretti</div>
+              <div class="tl-role">Empreendedorismo de Impacto</div>
+            </div>
+            <div class="tl-card-back">
+              <p class="tl-back-desc">TEDx Speaker. TOYP 2020. Atuou em M&amp;A, ESG e desenvolvimento em favelas de todos os estados.</p>
+              <div class="tl-back-tags"><span>Impacto Social</span><span>Startups</span><span>ESG</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-dot" id="gnode-dc"></div>
+      </div>
+
+      <!-- 05 MAI — direita -->
+      <div class="tl-item" data-side="right" data-speaker="mv">
+        <div class="tl-dot" id="gnode-mv"></div>
+        <div class="tl-card" tabindex="0">
+          <div class="tl-card-inner">
+            <div class="tl-card-front">
+              <div class="tl-day">05 MAI</div>
+              <div class="tl-name">Matias Von Oertzen</div>
+              <div class="tl-role">Investimentos &amp; Nova Geração</div>
+            </div>
+            <div class="tl-card-back">
+              <p class="tl-back-desc">Ex-XP Inc. &amp; Itaú BBA. Canal Filho Rico (161K). Fundador da Explica+ e Madra Investimentos.</p>
+              <div class="tl-back-tags"><span>Finanças</span><span>Investimento</span><span>FinTech</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 MAI — destaque, esquerda -->
+      <div class="tl-item featured" data-side="left" data-speaker="kz">
+        <div class="tl-card" tabindex="0">
+          <div class="tl-card-inner">
+            <div class="tl-card-front">
+              <div class="tl-day">06 MAI</div>
+              <div class="tl-name">KondZilla</div>
+              <div class="tl-role">Holding &middot; Creator &middot; Forbes 30U30</div>
+            </div>
+            <div class="tl-card-back">
+              <p class="tl-back-desc">66M inscritos. KondZilla Filmes, Records, Sintonia na Netflix. Escola de Criadores para jovens de favela.</p>
+              <div class="tl-back-tags"><span>Criatividade</span><span>Negócios Digitais</span><span>Periferia</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-dot" id="gnode-kz"></div>
+      </div>
+
+      <!-- 07 MAI — direita -->
+      <div class="tl-item" data-side="right" data-speaker="tb">
+        <div class="tl-dot" id="gnode-tb"></div>
+        <div class="tl-card" tabindex="0">
+          <div class="tl-card-inner">
+            <div class="tl-card-front">
+              <div class="tl-day">07 MAI</div>
+              <div class="tl-name">Theo Braga</div>
+              <div class="tl-role">Venture Capital &amp; Nova Economia</div>
+            </div>
+            <div class="tl-card-back">
+              <p class="tl-back-desc">26 anos. CEO da SME, maior escola de negócios da nova economia da América Latina. 20+ startups como anjo.</p>
+              <div class="tl-back-tags"><span>Venture Capital</span><span>Startups</span><span>Smart Money</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 08 MAI — esquerda -->
+      <div class="tl-item" data-side="left" data-speaker="ng">
+        <div class="tl-card" tabindex="0">
+          <div class="tl-card-inner">
+            <div class="tl-card-front">
+              <div class="tl-day">08 MAI</div>
+              <div class="tl-name">Nizan Guanaes</div>
+              <div class="tl-role">Publicidade, Branding &amp; Negócios</div>
+            </div>
+            <div class="tl-card-back">
+              <p class="tl-back-desc">CEO N Ideias. Fundador do Grupo ABC (R$1bi). FT top 5 brasileiros. Cannes Gold Lion. UNESCO.</p>
+              <div class="tl-back-tags"><span>Publicidade</span><span>Branding</span><span>Legado</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tl-dot" id="gnode-ng"></div>
+      </div>
+
+      <div class="timeline-hint">passe o mouse nos cards &nbsp;·&nbsp; clique nas conexões para ver a relação</div>
+    </div><!-- /timeline-wrap -->
+
+  </div>
+
+  <!-- ======================== SEÇÃO 2 — MODERADORES ======================== -->
+  <div class="section" data-page="moderadores">
+    <div class="section-label">Seção 02</div>
+    <div class="section-title">Moderadores</div>
+    <div class="section-2-bg">
+      <div class="moderators-grid">
+
+        <div class="mod-card president-card">
+          <div class="mod-label">Moderador — Abertura &amp; Encerramento</div>
+          <div class="mod-name" style="color:var(--yellow)">Presidente</div>
+          <div class="mod-desc">Abre o evento no dia 4 com o manifesto da LEI e fecha no dia 8 com a carta das startups e o call-to-action final. Não apresenta palestrantes — instala o clima. Dois momentos cirúrgicos de alto impacto.</div>
+          <div class="mod-days">
+            <span class="mod-day-tag">DIA 4 — ABERTURA</span>
+            <span class="mod-day-tag">DIA 8 — ENCERRAMENTO</span>
+          </div>
+        </div>
+
+        <div class="mod-card">
+          <div class="mod-label">Moderador — Dias 4, 5 e 6</div>
+          <div class="mod-name">Sebastian</div>
+          <div class="mod-desc">Conduz o hot seat dos primeiros três dias. Briefing preparado pela área de Inteligência de Mercado: 1 página sobre cada palestrante, 5 perguntas provocativas, 2 perguntas pessoais. Estilo: direto, curioso, sem bajulação.</div>
+          <div class="mod-days">
+            <span class="mod-day-tag">DIA 4 — Cavaretti</span>
+            <span class="mod-day-tag">DIA 5 — Von Oertzen</span>
+            <span class="mod-day-tag">DIA 6 — KondZilla</span>
+          </div>
+        </div>
+
+        <div class="mod-card">
+          <div class="mod-label">Moderador — Dias 7 e 8</div>
+          <div class="mod-name">Parceiro</div>
+          <div class="mod-desc">Um representante de qualquer parceiro estratégico confirmado pode moderar o dia 7 (Theo Braga — VC) como forma de exposição de marca. Essa oportunidade está em aberto para qualquer parceiro que confirme presença — ex: XP, Endeavor, C&amp;A ou outro. Caso não se concretize, um membro sênior da LEI assume.</div>
+          <div class="mod-days">
+            <span class="partner-mod-tag">ex: XP, Endeavor, C&amp;A…</span>
+            <span class="mod-day-tag">DIA 7 — Theo Braga</span>
+            <span class="mod-day-tag">DIA 8 — Nizan Guanaes</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 3 — FORMATO ======================== -->
+  <div class="section" data-page="formato">
+    <div class="section-label">Seção 03</div>
+    <div class="section-title">Formato de cada sessão — anti-palestra chata</div>
+    <div class="format-timeline">
+      <div class="format-step">
+        <div class="format-time">0–5'</div>
+        <div class="format-step-title">Detonação</div>
+        <div class="format-step-desc">Música ambiente sobe. Vídeo teaser do palestrante (30s de impacto). Moderador entra sem apresentação longa — uma frase, o nome, silêncio.</div>
+      </div>
+      <div class="format-step">
+        <div class="format-time">5–25'</div>
+        <div class="format-step-title">A história de virada</div>
+        <div class="format-step-desc">Palestrante fala apenas sobre UMA história de fracasso/virada pessoal. Sem currículo. Sem slides. Apenas a narrativa crua.</div>
+      </div>
+      <div class="format-step">
+        <div class="format-time">25–40'</div>
+        <div class="format-step-title">Hot seat</div>
+        <div class="format-step-desc">Moderador assume o palco. Entrevista estilo Rogan/Bial. Perguntas cirúrgicas. Sem deixar o palestrante se espreguiçar em respostas genéricas.</div>
+      </div>
+      <div class="format-step">
+        <div class="format-time">40–50'</div>
+        <div class="format-step-title">Pitch das startups</div>
+        <div class="format-step-desc">3 min cada startup da LEI. Palco, deck, pitch real. Palestrante do dia dá 1 feedback ao vivo. Público vota (Mentimeter).</div>
+      </div>
+      <div class="format-step">
+        <div class="format-time">50–58'</div>
+        <div class="format-step-title">Q&amp;A de impacto</div>
+        <div class="format-step-desc">Microfone passa na plateia. Moderador filtra e prioriza perguntas. Sem formulário digital — interação presencial e direta.</div>
+      </div>
+      <div class="format-step final-step">
+        <div class="drinks-badge">🍻 COMES &amp; BEBES</div>
+        <div class="format-time">58–75'</div>
+        <div class="format-step-title">Conexão ao vivo</div>
+        <div class="format-step-desc">Comes e bebes disponível para todos os convidados ao final da palestra. Espaço informal para que palestrante, startups e plateia se conheçam, troquem contatos e conversem livremente — sem mediação. Sorteio de brinde + foto coletiva.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 4 — CRONOGRAMA ======================== -->
+  <div class="section" data-page="cronograma">
+    <div class="section-label">Seção 04</div>
+    <div class="section-title">Cronograma operacional — hoje a 8 de maio</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+
+      <div class="fase-wrapper f1">
+        <div class="fase-header" style="color:var(--yellow)">FASE 1 — PREPARAÇÃO (9–20 ABR)</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-date">09–13 ABR — SEMANA 1</div>
+            <div class="tl-title">Definição interna + briefings</div>
+            <div class="tl-desc">Confirmar palestrantes. Criar identidade visual da semana. IM prepara 1 briefing por palestrante. Squads diários definidos.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-date">14–20 ABR — SEMANA 2</div>
+            <div class="tl-title">Countdown dos palestrantes</div>
+            <div class="tl-desc">Revelar 1 palestrante por dia nas redes. "Você sabe quem é...?" + 1 fato bombástico. Gerar curiosidade antes de revelar o nome.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fase-wrapper f2">
+        <div class="fase-header" style="color:var(--orange)">FASE 2 — ATIVAÇÃO (21 ABR–1 MAI)</div>
+        <div class="timeline">
+          <div class="tl-item hot">
+            <div class="tl-date">21–27 ABR — SEMANA 3</div>
+            <div class="tl-title">Invasão de salas — Pessoa de Impacto</div>
+            <div class="tl-desc">Dia 1 da invasão: 1 pessoa de alto impacto realiza toda a rodada naquele dia (ex: Daniel Zuckerman). Um rosto de peso valida o evento e gera credibilidade imediata. Banners estratégicos ativos. QR codes distribuídos.</div>
+          </div>
+          <div class="tl-item hot">
+            <div class="tl-date">28 ABR–1 MAI — SEMANA 4</div>
+            <div class="tl-title">Time Sprint de 4 membros</div>
+            <div class="tl-desc">Demais dias: equipe enxuta de 4 — 2 embaixadores da LEI + 1 convidado "famoso" que apenas acompanha (sem falar). O silêncio do famoso na sala gera humor e curiosidade. Encerramento: "Compareçam. Espero vocês lá."</div>
+          </div>
+        </div>
+        <div class="sprint-role-grid" style="margin-top:1rem">
+          <div class="sprint-role">
+            <div class="sprint-role-title" style="color:var(--orange)">Embaixador 1</div>
+            <div class="sprint-role-desc">Faz o script, lidera a abordagem</div>
+          </div>
+          <div class="sprint-role">
+            <div class="sprint-role-title" style="color:var(--orange)">Embaixador 2</div>
+            <div class="sprint-role-desc">Distribui QR code e responde dúvidas</div>
+          </div>
+          <div class="sprint-role">
+            <div class="sprint-role-title" style="color:var(--yellow)">Convidado <span class="famous-tag">famoso</span></div>
+            <div class="sprint-role-desc">Presença silenciosa — humor natural. No final: "Compareçam, espero vocês lá."</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fase-wrapper f3">
+        <div class="fase-header" style="color:var(--green)">FASE 3 — EXECUÇÃO (4–8 MAI)</div>
+        <div class="timeline">
+          <div class="tl-item go">
+            <div class="tl-date">4 MAI — DIA 1</div>
+            <div class="tl-title">Abertura — Cavaretti</div>
+            <div class="tl-desc">Presidente abre o evento com o manifesto da LEI (máx 3 min). Squad do dia 4 responsável por tudo.</div>
+          </div>
+          <div class="tl-item go">
+            <div class="tl-date">8 MAI — DIA 5 (ENCERRAMENTO)</div>
+            <div class="tl-title">Gran finale — Nizan + carta das startups</div>
+            <div class="tl-desc">Nizan dá feedback publicitário das 4 startups. Presidente lê a carta das startups em voz alta. Foto coletiva. Sorteio de brinde premium.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fase-wrapper f4">
+        <div class="fase-header" style="color:var(--purple)">FASE 4 — PÓS-EVENTO</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-date">9–16 MAI</div>
+            <div class="tl-title">Repercussão e relatório</div>
+            <div class="tl-desc">Reels de compilação de cada dia. Relatório de impacto para patrocinadores. Feedback interno da liga. Plantio de seeds para próxima edição.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 5 — PUBLICIDADE ======================== -->
+  <div class="section" data-page="publicidade">
+    <div class="section-label">Seção 05</div>
+    <div class="section-title">Plano de publicidade — membros como exército</div>
+    <div class="pub-grid">
+      <div class="pub-card" style="--card-accent:var(--purple)">
+        <div class="pub-area mkt">Marketing</div>
+        <div class="pub-title">Identidade visual &amp; redes</div>
+        <ul class="pub-items">
+          <li>1 reel por palestrante revelado</li>
+          <li>Stories diários com provocações</li>
+          <li>Countdown "faltam X dias"</li>
+          <li>Peças para TVs do campus</li>
+          <li>Design dos 2 banners</li>
+          <li>Identidade visual consistente</li>
+        </ul>
+      </div>
+      <div class="pub-card" style="--card-accent:var(--blue-acc)">
+        <div class="pub-area ri">Relações Institucionais</div>
+        <div class="pub-title">Parceiros &amp; Professores</div>
+        <ul class="pub-items">
+          <li>E-mail formal para professores</li>
+          <li>Contato com coordenadores de curso</li>
+          <li>Parceria com CAAs de outras faculdades</li>
+          <li>Prospecção de patrocinadores (até 22/04)</li>
+          <li>Convite para alunos de Pós</li>
+        </ul>
+      </div>
+      <div class="pub-card" style="--card-accent:var(--orange)">
+        <div class="pub-area proj">Projetos</div>
+        <div class="pub-title">Invasão de salas</div>
+        <ul class="pub-items">
+          <li>Script de 45s (ver Seção 9)</li>
+          <li>Times sprint por dia (ver Seção 4)</li>
+          <li>1 rodada por semana (sem 3 + sem 4)</li>
+          <li>Cada membro: 1 amigo externo</li>
+          <li>Celebração interna da liga</li>
+        </ul>
+      </div>
+      <div class="pub-card" style="--card-accent:var(--green)">
+        <div class="pub-area tec">Tecnologia</div>
+        <div class="pub-title">Landing page &amp; dados</div>
+        <ul class="pub-items">
+          <li>Página simples com inscrição</li>
+          <li>Contador de vagas em tempo real</li>
+          <li>QR codes para os banners</li>
+          <li>QR code impresso para inscrição</li>
+          <li>Mentimeter para votação ao vivo</li>
+        </ul>
+      </div>
+      <div class="pub-card" style="--card-accent:var(--yellow)">
+        <div class="pub-area im">Inteligência de Mercado</div>
+        <div class="pub-title">Conteúdo &amp; Briefings</div>
+        <ul class="pub-items">
+          <li>Briefing de 1 pág por palestrante</li>
+          <li>5 perguntas cirúrgicas por dia</li>
+          <li>Análise de público para segmentação</li>
+          <li>Conteúdo "você sabia?" para stories</li>
+          <li>Relatório pós-evento de impacto</li>
+        </ul>
+      </div>
+      <div class="pub-card" style="--card-accent:var(--red)">
+        <div class="pub-area gi">Gestão Interna</div>
+        <div class="pub-title">Engajamento dos membros</div>
+        <ul class="pub-items">
+          <li>Escala de squads por dia</li>
+          <li>Grupo de WhatsApp de guerra</li>
+          <li>Check-in diário 11h30 antes</li>
+          <li>Reconhecimento público pós-evento</li>
+          <li>Formulário de feedback pós-evento</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 6 — STARTUPS ======================== -->
+  <div class="section" data-page="startups">
+    <div class="section-label">Seção 06</div>
+    <div class="section-title">Vitrine das 4 startups — protagonismo real</div>
+    <div class="startups-banner">
+      <div class="startups-header">
+        <div class="startups-icon">04</div>
+        <div>
+          <div class="startups-title">Startups da LEI no palco</div>
+          <div class="startups-sub">Cada startup tem 3 minutos de pitch por dia + feedback do palestrante ao vivo</div>
+        </div>
+      </div>
+      <div class="startups-schedule">
+        <div class="startup-slot">
+          <div class="startup-day">4 MAI</div>
+          <div class="startup-who">Todas as 4 startups se apresentam</div>
+          <div class="startup-action">Daniel Cavaretti — feedback de impacto social</div>
+        </div>
+        <div class="startup-slot">
+          <div class="startup-day">5 MAI</div>
+          <div class="startup-who">Rodada de refinamento</div>
+          <div class="startup-action">Matias — feedback de viabilidade financeira</div>
+        </div>
+        <div class="startup-slot">
+          <div class="startup-day">6 MAI</div>
+          <div class="startup-who">Pitches com novo público</div>
+          <div class="startup-action">KondZilla — feedback de narrativa e marca</div>
+        </div>
+        <div class="startup-slot vc-day">
+          <div class="vc-flag">DIA DO INVESTIDOR</div>
+          <div class="startup-day">7 MAI</div>
+          <div class="startup-who">Pitch para investidor real</div>
+          <div class="startup-action">Theo Braga — feedback de VC · pode gerar conexão real de investimento</div>
+        </div>
+        <div class="startup-slot">
+          <div class="startup-day">8 MAI</div>
+          <div class="startup-who">Pitch final + carta</div>
+          <div class="startup-action">Nizan — feedback publicitário das 4 marcas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="vc-callout">
+      <strong style="color:var(--blue-light)">7 de Maio — atenção máxima:</strong> Theo Braga é investidor-anjo ativo em 20+ startups. O dia 7 pode ser o dia em que uma das startups da LEI consegue uma conexão real de investimento. Prepare as startups com antecedência para esse momento.
+    </div>
+
+    <!-- Fluxo de contribuição por palestrante -->
+    <div class="speaker-flow">
+      <div class="speaker-flow-title">O que cada palestrante vai contribuir para a startup — dia a dia</div>
+      <div class="speaker-flow-grid">
+        <div class="flow-day">
+          <div class="flow-day-num">DIA 1 · 4 MAI</div>
+          <div class="flow-day-speaker" style="color:var(--orange)">Cavaretti</div>
+          <div class="flow-day-arrow">→ MISSÃO DO DIA</div>
+          <div class="flow-day-contribution">Apresente sua ideia e receba o feedback de quem impactou comunidades reais. Cavaretti vai questionar: essa startup tem propósito além do lucro? Onde ela gera impacto genuíno?</div>
+        </div>
+        <div class="flow-day">
+          <div class="flow-day-num">DIA 2 · 5 MAI</div>
+          <div class="flow-day-speaker" style="color:var(--blue-acc)">Matias</div>
+          <div class="flow-day-arrow">→ MISSÃO DO DIA</div>
+          <div class="flow-day-contribution">Mostre seus números. Matias vai mapear a viabilidade financeira: o modelo de negócio faz sentido? Você sabe quanto precisa para crescer e como captar? Refinamento do pitch econômico.</div>
+        </div>
+        <div class="flow-day">
+          <div class="flow-day-num">DIA 3 · 6 MAI</div>
+          <div class="flow-day-speaker" style="color:var(--yellow)">KondZilla</div>
+          <div class="flow-day-arrow">→ MISSÃO DO DIA</div>
+          <div class="flow-day-contribution">Conte sua história. KondZilla vai desafiar a narrativa: sua marca tem identidade? Você sabe vender o porquê antes do como? Feedback de quem construiu uma holding do zero com storytelling.</div>
+        </div>
+        <div class="flow-day" style="background:rgba(255,214,0,0.04);border-top:2px solid var(--yellow)">
+          <div class="flow-day-num">DIA 4 · 7 MAI</div>
+          <div class="flow-day-speaker" style="color:var(--yellow)">Theo Braga</div>
+          <div class="flow-day-arrow" style="color:var(--yellow)">→ DIA DECISIVO</div>
+          <div class="flow-day-contribution">Pitch para quem pode escrever o cheque. Theo vai avaliar com olho de VC: tração, time, mercado, diferencial. Esse é o momento de ouro — esteja pronto para uma conversa real de investimento após o evento.</div>
+        </div>
+        <div class="flow-day">
+          <div class="flow-day-num">DIA 5 · 8 MAI</div>
+          <div class="flow-day-speaker" style="color:var(--purple)">Nizan</div>
+          <div class="flow-day-arrow">→ MISSÃO DO DIA</div>
+          <div class="flow-day-contribution">Apresente sua marca como se fosse a última vez. Nizan vai analisar como sua startup é vista pelo mercado: posicionamento, proposta de valor e o que falta para ser inesquecível. Encerramento com legado.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 7 — PATROCÍNIO ======================== -->
+  <div class="section" data-page="patrocinio">
+    <div class="section-label">Seção 07</div>
+    <div class="section-title">Estratégia de patrocínio</div>
+    <div class="sponsors-grid">
+      <div class="sponsor-card">
+        <div class="sponsor-name">XP Inc.</div>
+        <div class="sponsor-fit a">FIT MÁXIMO</div>
+        <div class="sponsor-desc">Matias Von Oertzen tem histórico na XP. XP tem programa universitário ativo (XP Educação). Público: alunos de alta renda interessados em investimentos. Contato via Matias ou LinkedIn do escritório universitário da XP.</div>
+        <div class="sponsor-who">Abordagem: RI + Matias abre a porta</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="sponsor-name">C&amp;A Brasil</div>
+        <div class="sponsor-fit a">FIT ALTO</div>
+        <div class="sponsor-desc">Instituto C&amp;A tem programa de empreendedorismo ativo. C&amp;A já fez parcerias com Endeavor para startups. Joca Guanaes (irmão de Nizan) tem conexões nesse ecossistema. Moderação de 1 dia como ativação de marca.</div>
+        <div class="sponsor-who">Abordagem: RI direto via LinkedIn institucional</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="sponsor-name">Endeavor</div>
+        <div class="sponsor-fit b">FIT NATURAL</div>
+        <div class="sponsor-desc">Maior organização de suporte ao empreendedorismo do Brasil. Nizan e KondZilla têm histórico com a Endeavor. Podem colocar a Semana em sua rede de eventos e apoiar com divulgação.</div>
+        <div class="sponsor-who">Abordagem: e-mail para programa universitário</div>
+      </div>
+      <div class="sponsor-card">
+        <div class="sponsor-name">iFood / Nubank</div>
+        <div class="sponsor-fit b">FIT ALTO</div>
+        <div class="sponsor-desc">Ambas têm programas ativos de employer branding universitário. Nubank tem talvez o maior programa universitário do Brasil. iFood pode entrar com coffee/food para o evento como ativação da marca.</div>
+        <div class="sponsor-who">Abordagem: programa de talentos/universidades</div>
+      </div>
+    </div>
+
+    <div class="onepager">
+      <div class="onepager-title">Proposta de Patrocínio — One Pager</div>
+      <div class="onepager-sub">Use este template para abordar patrocinadores. Adapte os dados da empresa target antes de enviar.</div>
+      <div class="op-grid">
+        <div class="op-section">
+          <h3>O Evento</h3>
+          <p>A Semana do Empreendedorismo é uma série de 5 encontros diários promovidos pela LEI — Liga de Empreendedorismo do Ibmec São Paulo — com palestrantes de alto impacto, pitches de startups nascentes e um comes &amp; bebes ao final de cada sessão para conexão real entre os participantes.</p>
+        </div>
+        <div class="op-section">
+          <h3>Os Palestrantes</h3>
+          <p>Daniel Cavaretti (TEDx, impacto social) · Matias Von Oertzen (XP/Itaú BBA) · KondZilla (maior canal de música do mundo, Netflix) · Theo Braga (SME, investidor-anjo) · Nizan Guanaes (Grupo ABC, Harvard OPM, Financial Times Top 5 Brasil)</p>
+        </div>
+      </div>
+      <div class="op-divider"></div>
+      <div class="op-grid">
+        <div class="op-section">
+          <h3>O Público</h3>
+          <ul class="op-bullets">
+            <li>200+ estudantes de negócios e direito por dia</li>
+            <li>Alunos da graduação Ibmec + Pós-graduação</li>
+            <li>Estudantes convidados de outras faculdades</li>
+            <li>Professores e coordenadores de curso</li>
+            <li>Perfil: 18–30 anos, alta renda, ambição empreendedora</li>
+          </ul>
+        </div>
+        <div class="op-section">
+          <h3>O que oferecemos ao patrocinador</h3>
+          <ul class="op-bullets">
+            <li>Logo em todos os materiais (banners, panfletos, digital)</li>
+            <li>Menção nos 5 dias do evento</li>
+            <li>Presença nas TVs do campus durante toda a semana</li>
+            <li>5 minutos de fala em 1 sessão (opcional)</li>
+            <li>Conteúdo orgânico nas redes sociais da LEI</li>
+            <li>Acesso a banco de dados de participantes (LGPD)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="op-highlight">
+        Investimento sugerido: R$ 1.500 – R$ 5.000 · Prazo de resposta: até 22 de abril de 2025 · Contato: [seu e-mail] / [seu celular]
+      </div>
+      <div class="op-contact">
+        <div class="op-footer">Liga de Empreendedorismo do Ibmec — LEI · Semana do Empreendedorismo 2025 · 4 a 8 de maio · Auditório Ibmec SP · 12h</div>
+        <div class="op-cta">ENVIAR PROPOSTA COMPLETA ↗</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 8 — PARCERIAS ======================== -->
+  <div class="section" data-page="parcerias">
+    <div class="section-label">Seção 08</div>
+    <div class="section-title">Parcerias estratégicas — Estado, ecossistema &amp; Startups</div>
+    <div class="parcerias-grid">
+      <div class="parceria-card">
+        <div class="parceria-tag">Governo / Estado</div>
+        <div class="parceria-title">Secretaria de Desenvolvimento Econômico de SP</div>
+        <div class="parceria-desc">A Secretaria de Desenvolvimento Econômico tem programas ativos de apoio ao ecossistema de startups em SP. Uma parceria pode abrir portas para divulgação via canais governamentais, possível presença de um representante no evento, e conexão das suas startups com editais públicos e programas como InovAtiva Brasil.</div>
+      </div>
+      <div class="parceria-card">
+        <div class="parceria-tag">Ecossistema</div>
+        <div class="parceria-title">Bossa Invest (Bossa Nova)</div>
+        <div class="parceria-desc">Theo Braga é presidente do Pool Smart Money gerido pela Bossa Nova. Com ele no dia 7, a conexão é natural: a Bossa pode amplificar o evento nas suas redes e colocar as 4 startups da LEI no radar do ecossistema de VC. Relações Institucionais deve contatar antes do evento.</div>
+      </div>
+      <div class="parceria-card">
+        <div class="parceria-tag">Ecossistema</div>
+        <div class="parceria-title">ABStartups / Cubo Itaú</div>
+        <div class="parceria-desc">A Associação Brasileira de Startups tem histórico de apoio a eventos universitários. O Cubo Itaú é o maior hub de startups da América Latina e fica em SP. Uma parceria pode incluir divulgação nas redes e eventual apoio com brindes ou acesso ao espaço para pós-evento.</div>
+      </div>
+      <div class="parceria-card">
+        <div class="parceria-tag">Mídia / Visibilidade</div>
+        <div class="parceria-title">Joca Guanaes — Irmão de Nizan</div>
+        <div class="parceria-desc">Joca Guanaes é publicitário e consultor com histórico de lives e entrevistas sobre marketing e negócios (programa Segundou). Como irmão de Nizan, pode ser o conector para facilitar o aceite e a logística do palestrante. Também pode ampliar o evento nas redes com cobertura ou curadoria de conteúdo pós-evento.</div>
+      </div>
+      <div class="parceria-card">
+        <div class="parceria-tag">Governo / Fomento</div>
+        <div class="parceria-title">FAPESP / Finep</div>
+        <div class="parceria-desc">A FAPESP tem programas como PIPE (Pesquisa Inovativa em Pequenas Empresas) e a Finep tem editais de apoio a startups. Uma parceria de comunicação — onde a LEI divulga os programas e eles divulgam o evento — é de custo zero e beneficia as 4 startups com informação estratégica.</div>
+      </div>
+      <div class="parceria-card">
+        <div class="parceria-tag">Comunidade</div>
+        <div class="parceria-title">Comunidades Acadêmicas — Outras Faculdades</div>
+        <div class="parceria-desc">FGV, Insper, PUC-SP, Mackenzie, ESPM — todas têm ligas e centros acadêmicos de empreendedorismo. Uma parceria de divulgação mútua (cross-promo) amplia o alcance sem custo. Relações Institucionais deve mapear os contatos já na semana 1.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 9 — SCRIPT INVASÃO ======================== -->
+  <div class="section" data-page="script">
+    <div class="section-label">Seção 09</div>
+    <div class="section-title">Script de invasão de salas (45 segundos)</div>
+    <div class="script-card">
+      <div class="script-title">Script padrão — adaptar por membro</div>
+      <div class="script-lines">
+        <div class="script-action">[Entra na sala, pede licença ao professor com um sorriso]</div><br>
+        "Boa tarde! Desculpa interromper por 40 segundos — prometo que vale.<br><br>
+        Semana que vem, de segunda a sexta, ao meio-dia, o auditório do Ibmec vai receber <strong>5 nomes que transformaram ideias em impacto real</strong>:<br>
+        KondZilla, Nizan Guanaes, Theo Braga — e mais dois que você vai descobrir.<br><br>
+        São 5 dias, nada de palestra chata — entrevistas ao vivo, pitches de startups reais daqui do Ibmec, e você pode fazer perguntas direto para eles.<br><br>
+        É gratuito. É limitado a [X] pessoas. As vagas somem rápido.<br><br>
+        Esse é o QR code — leva 10 segundos para se inscrever."<br>
+        <div class="script-action">[Mostra o QR code impresso, agradece, sai]</div>
+      </div>
+      <div class="script-note">Dicas de execução: falar em pé, sem ler, olho no olho, sorrir, não gaguejar. Ensaiar antes. Cada membro faz no mínimo 3 salas. Evitar as mesmas salas que outro membro já foi.</div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 10 — ÁREAS DA LIGA — MAPA SCRUM ======================== -->
+  <div class="section scrum-section" data-page="areas">
+    <div class="section-label">Seção 10</div>
+    <div class="section-title">Responsabilidades por área</div>
+
+    <!-- Grid completo das áreas -->
+    <div style="font-size:10px;font-weight:600;letter-spacing:0.12em;color:var(--text-dim);text-transform:uppercase;margin-bottom:1rem">Todas as responsabilidades por área</div>
+    <div class="areas-grid">
+      <div class="area-card has-scrum" style="border-left:3px solid var(--purple);--card-accent:var(--purple)"
+        data-scrum-area="Marketing" data-scrum-color="#BF5AF2"
+        data-scrum-title="Gravação &amp; Highlights — evento ao vivo"
+        data-scrum-items="Gravar e editar highlights de cada dia|Gravações em tempo real durante o evento|Publicar impacto ao vivo no Instagram|Reels diários e stories dos bastidores"
+        data-scrum-note="↔ Conecta com Gestão Interna: entrevistas ao vivo nas pausas">
+        <div class="area-name" style="color:var(--purple)">Marketing</div>
+        <div class="area-role">Identidade + Divulgação</div>
+        <ul class="area-tasks">
+          <li>Criar identidade visual da semana</li>
+          <li>1 reel por palestrante (5 reels no total)</li>
+          <li>Stories diários + countdown</li>
+          <li>Conteúdo para TVs do campus</li>
+          <li>Design dos 2 banners (entrega até semana 3)</li>
+          <li>Panfleto A5 (200 cópias)</li>
+        </ul>
+        <div class="scrum-badge">Time Scrum — Evento ao vivo</div>
+      </div>
+      <div class="area-card" style="border-left:3px solid var(--blue-acc)">
+        <div class="area-name" style="color:var(--blue-acc)">Relações Institucionais</div>
+        <div class="area-role">Parceiros + Patrocínio</div>
+        <ul class="area-tasks">
+          <li>Prospectar 4 patrocinadores (prazo: 22 abr)</li>
+          <li>Enviar one pager personalizado</li>
+          <li>Contato com professores e coordenadores</li>
+          <li>Parceria com ligas de outras faculdades</li>
+          <li>Facilitar convite via Joca Guanaes para Nizan</li>
+          <li>Conectar startups com Bossa Invest antes do dia 7</li>
+        </ul>
+      </div>
+      <div class="area-card" style="border-left:3px solid var(--orange)">
+        <div class="area-name" style="color:var(--orange)">Projetos</div>
+        <div class="area-role">Execução Total do Evento</div>
+        <ul class="area-tasks">
+          <li>Montar squads diários (membros da liga)</li>
+          <li>Check-list de cada dia (ver Seção 11)</li>
+          <li>Recepção e logística de cada palestrante</li>
+          <li>Controle de tempo das sessões</li>
+          <li>Montagem/desmontagem do espaço</li>
+          <li>Coordenar invasão de salas (semana 3 e 4)</li>
+        </ul>
+      </div>
+      <div class="area-card" style="border-left:3px solid var(--yellow)">
+        <div class="area-name" style="color:var(--yellow)">Inteligência de Mercado</div>
+        <div class="area-role">Estratégia + Briefings</div>
+        <ul class="area-tasks">
+          <li>Briefing de 1 pág por palestrante para moderador</li>
+          <li>5 perguntas cirúrgicas por sessão</li>
+          <li>2 perguntas pessoais por palestrante</li>
+          <li>Análise de dados de inscrição (perfil do público)</li>
+          <li>Relatório de impacto pós-evento</li>
+          <li>Monitorar engajamento por canal</li>
+        </ul>
+      </div>
+      <div class="area-card has-scrum" style="border-left:3px solid var(--green);--card-accent:var(--green)"
+        data-scrum-area="Tecnologia" data-scrum-color="#30D158"
+        data-scrum-title="Suporte Técnico nos Dias — evento ao vivo"
+        data-scrum-items="Microfone e equipamentos funcionando|Projetor, slides e ferramentas digitais|Login e suporte técnico nas redes sociais|Publicações ao vivo (Instagram, LinkedIn)">
+        <div class="area-name" style="color:var(--green)">Tecnologia</div>
+        <div class="area-role">Produto + Ferramentas</div>
+        <ul class="area-tasks">
+          <li>Landing page com inscrição + contador de vagas</li>
+          <li>QR codes para banners e panfletos</li>
+          <li>Setup Mentimeter para votação ao vivo</li>
+          <li>Suporte técnico nos dias do evento</li>
+          <li>Apoio às publicações ao vivo nas redes</li>
+        </ul>
+        <div class="scrum-badge">Time Scrum — Evento ao vivo</div>
+      </div>
+      <div class="area-card has-scrum" style="border-left:3px solid var(--red);--card-accent:var(--red)"
+        data-scrum-area="Gestão Interna" data-scrum-color="#FF453A"
+        data-scrum-title="Feedback em Tempo Real — evento ao vivo"
+        data-scrum-items="Time de feedback durante as pausas|Captar percepções da plateia entre sessões|Alimentar Marketing com frases ao vivo|Formulário de feedback pós-evento"
+        data-scrum-note="↔ Conecta com Marketing: entrevistas nas pausas geram conteúdo imediato">
+        <div class="area-name" style="color:var(--red)">Gestão Interna</div>
+        <div class="area-role">Pessoas + Cultura</div>
+        <ul class="area-tasks">
+          <li>Escala dos membros nos squads</li>
+          <li>Grupo de WhatsApp de operações diárias</li>
+          <li>Reunião de alinhamento às 11h30 de cada dia</li>
+          <li>Garantir que todos saibam seu papel</li>
+          <li>Formulário de feedback pós-evento</li>
+          <li>Reconhecimento público dos destaques</li>
+        </ul>
+        <div class="scrum-badge">Time Scrum — Evento ao vivo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 11 — CUSTOS ======================== -->
+  <div class="section" data-page="custos">
+    <div class="section-label">Seção 11</div>
+    <div class="section-title">Orçamento de baixo custo</div>
+    <div class="custos-grid">
+      <div class="custo-card">
+        <div class="custo-title">Custos essenciais (mínimo viável)</div>
+        <div class="custo-row"><span class="custo-item">2 banners (gráfica)</span><span class="custo-val">R$ 150–250</span></div>
+        <div class="custo-row"><span class="custo-item">Panfletos A5 (200 unid.)</span><span class="custo-val">R$ 60–80</span></div>
+        <div class="custo-row"><span class="custo-item">Água para palestrantes + básico x5 dias</span><span class="custo-val">R$ 100–150</span></div>
+        <div class="custo-row"><span class="custo-item">Comes &amp; Bebes x5 dias</span><span class="custo-val">R$ 150–200</span></div>
+        <div class="custo-row"><span class="custo-item">Impressões/QR codes adicionais</span><span class="custo-val">R$ 30–50</span></div>
+        <div class="custo-row total"><span>TOTAL MÍNIMO VIÁVEL</span><span class="custo-val">R$ 490–730</span></div>
+      </div>
+      <div class="custo-card">
+        <div class="custo-title">Brindes (objetivo: custo zero)</div>
+        <div class="custo-row"><span class="custo-item">Camisetas LEI (sorteio)</span><span class="custo-val">via patrocínio</span></div>
+        <div class="custo-row"><span class="custo-item">Canetas / cadernos</span><span class="custo-val">via parceiros</span></div>
+        <div class="custo-row"><span class="custo-item">Vouchers de apps (iFood, etc.)</span><span class="custo-val">via parceria</span></div>
+        <div class="custo-row"><span class="custo-item">Acesso a cursos online</span><span class="custo-val">Matias / SME</span></div>
+        <div class="custo-row"><span class="custo-item">Conteúdo exclusivo (e-book, material)</span><span class="custo-val">custo zero</span></div>
+        <div class="custo-row total"><span>TOTAL DE BRINDES (meta)</span><span class="custo-val">R$ 0</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== SEÇÃO 12 — VIBE ======================== -->
+  <div class="section" data-page="vibe">
+    <div class="section-label">Seção 12</div>
+    <div class="section-title">Vibe &amp; atmosfera — o que faz a diferença</div>
+    <div class="vibe-cards">
+      <div class="vibe-card">
+        <div class="vibe-icon" style="color:var(--yellow)">SOM</div>
+        <div class="vibe-title">Playlist curada</div>
+        <div class="vibe-desc">Cada dia tem uma playlist que começa suave e sobe de BPM até o momento da entrada do palestrante. Silêncio breve + entrada = goosebumps.</div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-icon" style="color:var(--orange)">URGÊNCIA</div>
+        <div class="vibe-title">Cadeiras das 3 primeiras fileiras reservadas</div>
+        <div class="vibe-desc">Marcadas com papel "reservado para quem chegou cedo". Cria incentivo de chegar antes e gera percepção de demanda real.</div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-icon" style="color:var(--yellow)">FECHAMENTO</div>
+        <div class="vibe-title">Carta das startups — dia 8</div>
+        <div class="vibe-desc">No encerramento, o Presidente lê em voz alta a carta pública das 4 startups com seus compromissos. Seguida de foto coletiva de toda a LEI. Momento de pertencimento inesquecível.</div>
+      </div>
+      <div class="vibe-card">
+        <div class="vibe-icon" style="color:var(--purple)">MEMÓRIA</div>
+        <div class="vibe-title">O palestrante não faz palestra</div>
+        <div class="vibe-desc">Instrução explícita a todos: sem slides obrigatórios, sem currículo, sem apresentação formal. Apenas 1 história real. Isso choca o público positivamente.</div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /main -->
+
+<!-- POPUP DE CONEXÃO — position:fixed, precisa estar fora das seções -->
+<div class="mind-popup-overlay" id="mind-overlay" hidden></div>
+<div class="mind-popup-card" id="mind-popup" hidden>
+  <button class="mind-popup-close" id="mind-close" aria-label="Fechar">×</button>
+  <div class="mind-popup-eyebrow" id="mind-eyebrow">CONEXÃO ENTRE CONVIDADOS</div>
+  <div class="mind-popup-title" id="mind-title"></div>
+  <div class="mind-popup-speakers" id="mind-speakers"></div>
+  <div class="mind-popup-body" id="mind-body"></div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div>
+    <div class="footer-brand">LEI — Liga de Empreendedorismo Ibmec</div>
+    <div style="font-size:13px;margin-top:4px">Semana do Empreendedorismo · 4–8 de Maio · 12h · Auditório Ibmec SP</div>
+  </div>
+  <div class="footer-meta">
+    <div>Documento estratégico interno — confidencial</div>
+    <div>Elaborado em 09 de abril de 2025</div>
+    <div style="margin-top:4px;font-weight:700">BORAAA — ÀS ARMAS!</div>
+  </div>
+</div>
+
+<!-- Painel SCRUM global — fora de qualquer transform -->
+<div id="scrum-flyout" aria-hidden="true">
+  <div id="scrum-flyout-area"></div>
+  <div id="scrum-flyout-body">
+    <div id="scrum-flyout-title"></div>
+    <ul id="scrum-flyout-items"></ul>
+    <div id="scrum-flyout-note"></div>
+  </div>
+</div>
+
+<script src="js/animations.js"></script>
+</body>
+</html>
