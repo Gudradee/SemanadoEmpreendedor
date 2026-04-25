@@ -486,7 +486,7 @@ body {
    RESPONSIVE
 ══════════════════════════════════════════ */
 @media (max-width: 760px) {
-  #speakers-track { height: auto; }
+  #convidados { height: auto; }
 
   #speakers-sticky {
     position: relative;
@@ -496,10 +496,10 @@ body {
 
   .spk-page {
     position: relative;
-    min-height: 100svh;
     pointer-events: all;
     display: flex;
     flex-direction: column;
+    border-bottom: 1px solid var(--border);
   }
 
   .split-panel,
@@ -514,11 +514,29 @@ body {
     height: auto;
   }
 
-  .photo-panel { height: 70vw; min-height: 280px; }
-  .photo-card  { width: 54%; }
+  /* Foto sempre no topo, independente do layout desktop */
+  .split-right:has(.photo-panel) { order: -1; }
+
+  .photo-panel {
+    height: 72vw;
+    min-height: 260px;
+  }
+
+  .photo-card { width: 56%; }
+
   .photo-initials { font-size: 48px; }
 
-  .info-panel { padding: 36px 24px; height: auto; }
+  .info-panel {
+    padding: 32px 24px 44px;
+    height: auto;
+    gap: 14px;
+  }
+
+  .spk-bio { font-size: 13px; }
+
+  .spk-cta-row { flex-direction: column; }
+
+  .spk-cta { width: 100%; min-width: unset; }
 
   .panel-divider,
   .page-dots { display: none; }
