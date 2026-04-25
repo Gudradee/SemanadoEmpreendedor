@@ -145,9 +145,9 @@ function updateSpeakers() {
     const lumaPublic = el.dataset.lumaPublic;
     const forceOpen  = el.dataset.forceOpen === 'true';
 
-    // Name blur until 4 days before; photo blur until 2 days before
-    if (nameEl)    nameEl.classList.toggle('name-blurred',  diff > FOUR_DAYS_MS);
-    if (photoCard) photoCard.classList.toggle('photo-blurred', diff > TWO_DAYS_MS);
+    // Nomes e fotos sempre desfocados até revelação manual
+    if (nameEl)    nameEl.classList.add('name-blurred');
+    if (photoCard) photoCard.classList.add('photo-blurred');
 
     // Reset both buttons
     [btnIbmec, btnPublic].forEach(btn => {
