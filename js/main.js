@@ -145,9 +145,8 @@ function updateSpeakers() {
     const lumaPublic = el.dataset.lumaPublic;
     const forceOpen  = el.dataset.forceOpen === 'true';
 
-    // Nomes e fotos sempre desfocados até revelação manual
-    if (nameEl)    nameEl.classList.add('name-blurred');
-    if (photoCard) photoCard.classList.add('photo-blurred');
+    if (nameEl)    nameEl.classList.remove('name-blurred');
+    if (photoCard) photoCard.classList.remove('photo-blurred');
 
     // Reset both buttons
     [btnIbmec, btnPublic].forEach(btn => {
