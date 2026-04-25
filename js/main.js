@@ -120,6 +120,18 @@ dots.forEach((d, i) => {
 });
 
 
+// ── MOBILE SCROLL REVEAL ─────────────────────────────────────────
+(function initMobileReveal() {
+  if (window.innerWidth > 760) return;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('in-view');
+    });
+  }, { threshold: 0.2 });
+  spkPages.forEach(p => observer.observe(p));
+})();
+
+
 // ── BUTTON UNLOCK + BLUR LOGIC ───────────────────────────────────
 const TWO_DAYS_MS  = 2 * 24 * 60 * 60 * 1000;
 const FOUR_DAYS_MS = 4 * 24 * 60 * 60 * 1000;
