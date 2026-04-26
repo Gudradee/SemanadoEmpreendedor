@@ -6,15 +6,13 @@
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
 
-  // Speaker accent colors + white (white weighted more)
+  // Paleta da marca LEI Ibmec
   const PALETTE = [
-    [255,255,255],[255,255,255],[255,255,255],[255,255,255],[255,255,255],
-    [41, 151,255],  // blue  (dominant — azul e preto)
-    [41, 151,255],
-    [191, 90,242],  // purple
-    [255,107, 53],  // orange
-    [48, 209, 88],  // green
-    [255,214, 10],  // yellow
+    [254,254,254],[254,254,254],[254,254,254],[254,254,254],[254,254,254], // branco (dominante)
+    [253,193, 40],[253,193, 40],[253,193, 40],  // amarelo FDC128
+    [255,220,120],  // amarelo claro
+    [200,200,255],  // azul muito suave
+    [254,254,254],  // branco extra
   ];
 
   function resize() {
