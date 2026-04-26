@@ -497,35 +497,46 @@ body {
     overflow: visible;
   }
 
-  /* Cada speaker ocupa a viewport inteira, split lado a lado */
+  /* Hero: título menor para não transbordar */
+  .hero-title {
+    font-size: clamp(22px, 6.5vw, 44px);
+    overflow-wrap: break-word;
+  }
+
+  .hero-sub br { display: none; }
+
+  /* Speaker card: altura pelo conteúdo, sem espaço vazio */
   .spk-page {
     position: relative;
-    height: 100svh;
-    min-height: 520px;
+    height: auto;
+    min-height: 0;
     display: flex;
     flex-direction: row;
+    align-items: stretch;
     overflow: hidden;
     border-bottom: 1px solid var(--border);
     pointer-events: all;
   }
 
-  /* Painéis lado a lado no mobile */
+  /* Painéis: 44% foto / 56% texto */
   .split-panel,
   .split-left,
   .split-right {
     position: relative;
-    width: 50%;
     left: auto;
     top: auto;
-    height: 100%;
+    height: auto;
     transition: transform 0.65s cubic-bezier(0.77, 0, 0.175, 1);
   }
 
-  /* Estado inicial: fora de tela */
-  .split-left  { transform: translateX(-100%); }
-  .split-right { transform: translateX(100%); }
+  .split-left  { width: 44%; transform: translateX(-100%); }
+  .split-right { width: 56%; transform: translateX(100%); }
 
-  /* Neutraliza o .active do desktop no mobile */
+  /* Quando foto está no split-right, ajusta proporcional */
+  .split-right:has(.photo-panel) { width: 44%; }
+  .split-left:has(.info-panel)   { width: 56%; }
+
+  /* Neutraliza .active do desktop */
   .spk-page.active .split-left  { transform: translateX(-100%); }
   .spk-page.active .split-right { transform: translateX(100%); }
 
@@ -533,56 +544,57 @@ body {
   .spk-page.in-view .split-left,
   .spk-page.in-view .split-right { transform: translateX(0); }
 
-  /* Foto ocupa 100% do painel */
-  .photo-panel { height: 100%; width: 100%; }
+  .photo-panel {
+    height: auto;
+    min-height: 56vw;
+    width: 100%;
+  }
 
   .photo-card {
-    width: 80%;
+    width: 88%;
     aspect-ratio: 3 / 4;
   }
 
-  .photo-initials { font-size: 36px; }
+  .photo-initials { font-size: 32px; }
 
-  /* Info panel compacto */
   .info-panel {
-    padding: 24px 14px 24px 12px;
-    height: 100%;
-    gap: 8px;
+    padding: 18px 12px 18px 10px;
+    height: auto;
+    gap: 7px;
     overflow-y: auto;
     justify-content: center;
     scrollbar-width: none;
   }
   .info-panel::-webkit-scrollbar { display: none; }
 
-  .spk-num  { font-size: 9px; }
-  .spk-day  { font-size: 9px; }
-  .spk-name { font-size: clamp(15px, 4.2vw, 24px); }
-  .spk-role { font-size: 10px; margin-top: -2px; }
+  .spk-num  { font-size: 8px; }
+  .spk-day  { font-size: 8px; }
+  .spk-name { font-size: clamp(13px, 3.6vw, 20px); }
+  .spk-role { font-size: 9px; margin-top: -2px; }
 
   .spk-bio {
-    font-size: 11px;
-    line-height: 1.6;
+    font-size: 10px;
+    line-height: 1.55;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
-  /* Tags ocultadas no mobile — pouco espaço */
   .spk-tags { display: none; }
 
-  .spk-cta-title { font-size: 9px; margin-top: 2px; }
-
-  .spk-cta-row { flex-direction: column; gap: 6px; }
+  .spk-cta-wrap { gap: 6px; }
+  .spk-cta-title { font-size: 8px; margin-top: 0; }
+  .spk-cta-row { flex-direction: column; gap: 5px; }
 
   .spk-cta {
     width: 100%;
     min-width: unset;
-    font-size: 11px;
-    padding: 10px 10px;
+    font-size: 10px;
+    padding: 8px 8px;
   }
 
-  .spk-cta-note { font-size: 10px; }
+  .spk-cta-note { font-size: 9px; }
 
   .panel-divider,
   .page-dots { display: none; }
