@@ -307,7 +307,7 @@ body {
 .spk-page.unrevealed .spk-role          { filter: blur(7px);  user-select: none; }
 .spk-page.unrevealed .spk-bio           { filter: blur(5px);  user-select: none; }
 .spk-page.unrevealed .spk-tags          { filter: blur(5px);  user-select: none; }
-.spk-page.unrevealed .spk-cta-title     { opacity: 0; }
+/* spk-cta-title sempre visível — indica onde se inscrever */
 
 /* ── Info panel ── */
 .info-panel {
@@ -432,22 +432,26 @@ body {
 /* Reativa cliques apenas nos botões ativos */
 .spk-cta.active { pointer-events: all; cursor: pointer; }
 
-/* Aluno Ibmec — azul */
+/* Aluno Ibmec — amarelo com borda e sombra para definição */
 .spk-cta-ibmec.active {
   background: var(--c);
-  color: #fff;
+  color: #0e0e37;
   outline: none;
+  border: 1.5px solid rgba(0,0,0,0.18);
   cursor: pointer;
-  box-shadow: 0 0 32px rgba(var(--crgb), 0.35);
+  box-shadow: 0 4px 20px rgba(var(--crgb), 0.55), 0 0 0 2px rgba(var(--crgb), 0.25);
+  font-weight: 800;
 }
 
-/* Não sou aluno — branco */
+/* Não sou aluno — branco com borda */
 .spk-cta-public.active {
   background: var(--gold);
   color: var(--bg);
   outline: none;
+  border: 1.5px solid rgba(14,14,55,0.15);
   cursor: pointer;
-  box-shadow: 0 0 24px rgba(var(--gold-rgb), 0.15);
+  box-shadow: 0 4px 20px rgba(var(--gold-rgb), 0.12);
+  font-weight: 800;
 }
 
 .spk-cta.active:hover {
