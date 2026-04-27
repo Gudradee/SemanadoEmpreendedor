@@ -549,11 +549,31 @@ body {
   .spk-page.in-view .split-left,
   .spk-page.in-view .split-right { transform: translateX(0); }
 
-  .photo-panel { height: 100%; width: 100%; }
+  /* Coluna da foto: menor que a tela, centralizada */
+  .split-left:has(.photo-panel),
+  .split-right:has(.photo-panel) {
+    align-self: center;
+    height: 68%;
+    margin: 0 6px;
+    border-radius: 14px;
+    overflow: hidden;
+  }
 
-  .photo-card { width: 78%; aspect-ratio: 2 / 3; }
+  .photo-panel {
+    height: 100%;
+    width: 100%;
+  }
 
-  .photo-initials { font-size: 32px; }
+  /* Foto preenche o painel completamente */
+  .photo-card {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: unset;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .photo-initials { font-size: 28px; }
 
   /* Info panel — compacto, rola se necessário */
   .info-panel {
