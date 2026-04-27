@@ -155,6 +155,9 @@ function updateSpeakers() {
     const lumaPublic = el.dataset.lumaPublic;
     const forceOpen  = el.dataset.forceOpen === 'true';
 
+    // Reveal progressivo por data
+    const revealDate = el.dataset.revealDate ? new Date(el.dataset.revealDate) : new Date(0);
+    el.classList.toggle('unrevealed', now < revealDate);
     if (nameEl)    nameEl.classList.remove('name-blurred');
     if (photoCard) photoCard.classList.remove('photo-blurred');
 

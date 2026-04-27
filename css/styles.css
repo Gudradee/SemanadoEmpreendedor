@@ -301,6 +301,14 @@ body {
 
 .photo-card.photo-blurred { filter: blur(28px); }
 
+/* ── Suspense: convidado ainda não revelado ── */
+.spk-page.unrevealed .photo-card        { filter: blur(28px); }
+.spk-page.unrevealed .spk-name          { filter: blur(18px); user-select: none; }
+.spk-page.unrevealed .spk-role          { filter: blur(7px);  user-select: none; }
+.spk-page.unrevealed .spk-bio           { filter: blur(5px);  user-select: none; }
+.spk-page.unrevealed .spk-tags          { filter: blur(5px);  user-select: none; }
+.spk-page.unrevealed .spk-cta-title     { opacity: 0; }
+
 /* ── Info panel ── */
 .info-panel {
   width: 100%;
@@ -595,6 +603,9 @@ body {
   }
 
   .spk-cta-note { font-size: 9px; }
+
+  /* Espaço entre os cards */
+  .spk-page + .spk-page { margin-top: 10px; }
 
   .panel-divider,
   .page-dots { display: none; }
