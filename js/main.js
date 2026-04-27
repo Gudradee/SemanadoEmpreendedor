@@ -118,15 +118,41 @@ dots.forEach((d, i) => {
 });
 
 
-// ── MOBILE SCROLL REVEAL ─────────────────────────────────────────
-(function initMobileReveal() {
+// ── MOBILE CAROUSEL ──────────────────────────────────────────────
+(function initMobileCarousel() {
   if (window.innerWidth > 760) return;
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) e.target.classList.add('in-view');
+
+  const sticky = document.getElementById('speakers-sticky');
+  if (!sticky) return;
+
+  // Sync dots when user swipes
+  sticky.addEventListener('scroll', () => {
+    const idx = Math.round(sticky.scrollLeft / sticky.offsetWidth);
+    showSpeaker(idx);
+  }, { passive: true });
+
+  // Dots click → scroll to slide
+  dots.forEach((d, i) => {
+    d.onclick = () => {
+      sticky.scrollTo({ left: i * sticky.offsetWidth, behavior: 'smooth' });
+    };
+  });
+
+  // Auto-navigate to the next upcoming event
+  const now = new Date();
+  let targetIdx = 0;
+  let minDiff = Infinity;
+  spkPages.forEach((el, i) => {
+    const diff = new Date(el.dataset.eventDate) - now;
+    if (diff > 0 && diff < minDiff) { minDiff = diff; targetIdx = i; }
+  });
+
+  if (targetIdx > 0) {
+    requestAnimationFrame(() => {
+      sticky.scrollLeft = targetIdx * sticky.offsetWidth;
+      showSpeaker(targetIdx);
     });
-  }, { threshold: 0.2 });
-  spkPages.forEach(p => observer.observe(p));
+  }
 })();
 
 
