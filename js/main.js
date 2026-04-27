@@ -181,10 +181,10 @@ const SPEAKER_DATA = [
   },
   {
     idx: 3,
-    name: 'Karla Cimed',
-    role: 'Empreendedorismo & Branding',
-    bio: 'Vice-Presidente da CIMED, uma das maiores farmacêuticas do Brasil. Transformou a marca com marketing irreverente e mais de 1 milhão de seguidores nas redes.',
-    tags: ['Marketing', 'Branding', 'Indústria'],
+    name: 'Paulo Rogério Nunes',
+    role: 'Estratégia, Diversidade & Futurismo',
+    bio: 'Autor de "Oportunidades Invisíveis" — livro pioneiro sobre Diversidade e Inovação no Brasil. Cofundador da aceleradora Vale do Dendê e da AFAR Ventures. Um dos 100 mais inovadores fora do Vale do Silício (Rest of the World). Palestrante no SXSW e no Obama Foundation Summit, convidado por Barack Obama. Projetos com Google, Netflix, Disney, Spotify e Natura & Co.',
+    tags: ['Diversidade & Inovação', 'Futurismo', 'ESG'],
   },
   {
     idx: 4,
