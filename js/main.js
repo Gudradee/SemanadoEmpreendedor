@@ -130,6 +130,46 @@ dots.forEach((d, i) => {
 })();
 
 
+// ── DADOS DOS CONVIDADOS (fora do HTML para proteger o source) ───
+const SPEAKER_DATA = [
+  {
+    idx: 0,
+    name: 'Daniel Cavaretti',
+    role: 'Empreendedorismo de Impacto',
+    bio: 'TEDx Speaker. TOYP 2020 — Top Outstanding Young Person. Participou de reality show de empreendedorismo com Cris Arcangeli. Atuou em M&A, ESG e desenvolvimento em favelas de todos os estados do Brasil.',
+    tags: ['Impacto Social', 'Startups', 'ESG'],
+  },
+  {
+    idx: 1,
+    name: 'Matias Von Oertzen',
+    role: 'Investimentos & Nova Geração',
+    bio: 'Ex-XP Inc. & Itaú BBA. Criador do canal "Filho Rico" com 161 mil seguidores. Fundador da Explica+ e Madra Investimentos. Traduz o mercado financeiro para jovens universitários de forma direta e sem filtros.',
+    tags: ['Finanças', 'Investimento', 'FinTech'],
+  },
+  {
+    idx: 2,
+    name: 'Barsi Investimentos',
+    role: 'Luiz Barsi Neto & Matheus Barsi',
+    bio: 'Gestora fundada pelos sócios Luiz Barsi Neto e Matheus Barsi, herdeiros da filosofia de Luiz Barsi Filho — o maior investidor pessoa física do Brasil. Referência em value investing, foco em dividendos e construção de patrimônio de longo prazo.',
+    tags: ['Value Investing', 'Dividendos', 'Gestão de Patrimônio'],
+  },
+  {
+    idx: 3,
+    name: 'Karla Cimed',
+    role: 'Empreendedorismo & Branding',
+    bio: 'Vice-Presidente da CIMED, uma das maiores indústrias farmacêuticas do Brasil. Referência em marketing, branding e gestão de pessoas. Transformou a CIMED numa marca desejada por jovens — com mais de 1 milhão de seguidores e presença constante nas redes.',
+    tags: ['Marketing', 'Branding', 'Indústria'],
+  },
+  {
+    idx: 4,
+    name: 'Joca Guanaes',
+    role: 'Comunicação, Estratégia e Liderança Criativa',
+    bio: 'Publicitário e empresário com trajetória consolidada no mercado brasileiro de comunicação. Atuou em grandes agências, ocupou posição de liderança na J. Walter Thompson e desenvolve projetos em consultoria, branding e negócios por meio da JOCA4BETA.',
+    tags: ['Branding', 'Marketing', 'Consultoria'],
+  },
+];
+
+
 // ── BUTTON UNLOCK + BLUR LOGIC ───────────────────────────────────
 const TWO_DAYS_MS  = 2 * 24 * 60 * 60 * 1000;
 const FOUR_DAYS_MS = 4 * 24 * 60 * 60 * 1000;
@@ -157,9 +197,27 @@ function updateSpeakers() {
 
     // Reveal progressivo por data
     const revealDate = el.dataset.revealDate ? new Date(el.dataset.revealDate) : new Date(0);
-    el.classList.toggle('unrevealed', now < revealDate);
+    const revealed   = now >= revealDate;
+    const spkData    = SPEAKER_DATA.find(d => d.idx === parseInt(el.dataset.idx));
+    el.classList.toggle('unrevealed', !revealed);
     if (nameEl)    nameEl.classList.remove('name-blurred');
     if (photoCard) photoCard.classList.remove('photo-blurred');
+
+    // Injeta ou limpa conteúdo do convidado
+    const roleEl = el.querySelector('.spk-role');
+    const bioEl  = el.querySelector('.spk-bio');
+    const tagsEl = el.querySelector('.spk-tags');
+    if (revealed && spkData) {
+      if (nameEl)  nameEl.textContent  = spkData.name;
+      if (roleEl)  roleEl.textContent  = spkData.role;
+      if (bioEl)   bioEl.textContent   = spkData.bio;
+      if (tagsEl)  tagsEl.innerHTML    = spkData.tags.map(t => `<span>${t}</span>`).join('');
+    } else {
+      if (nameEl)  nameEl.textContent  = '';
+      if (roleEl)  roleEl.textContent  = '';
+      if (bioEl)   bioEl.textContent   = '';
+      if (tagsEl)  tagsEl.innerHTML    = '';
+    }
 
     // Reset both buttons
     [btnIbmec, btnPublic].forEach(btn => {
