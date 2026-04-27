@@ -135,9 +135,9 @@ const SPEAKER_DATA = [
   {
     idx: 0,
     name: 'Daniel Cavaretti',
-    role: 'Empreendedorismo de Impacto',
-    bio: 'TEDx Speaker. TOYP 2020 — Top Outstanding Young Person. Participou de reality show de empreendedorismo com Cris Arcangeli. Atuou em M&A, ESG e desenvolvimento em favelas de todos os estados do Brasil.',
-    tags: ['Impacto Social', 'Startups', 'ESG'],
+    role: 'CEO · Inovação, M&A & ESG',
+    bio: 'TOYP 2020 — Top Outstanding Young Person of the World. Finalista entre os 10 melhores mentores e os 10 melhores investidores do Brasil pela Associação Brasileira de Startups. Idealizador do primeiro reality de empreendedorismo de impacto do país, ao lado de Cris Arcangeli. TEDx Speaker. Atuou presencialmente em todos os estados brasileiros — usando inovação, M&A e tecnologia como ferramentas reais de transformação em favelas e territórios vulneráveis.',
+    tags: ['Inovação & Tecnologia', 'M&A · ESG', 'Impacto Social'],
   },
   {
     idx: 1,
