@@ -136,8 +136,8 @@ const SPEAKER_DATA = [
     idx: 0,
     name: 'Daniel Cavaretti',
     role: 'CEO · Inovação, M&A & ESG',
-    bio: 'TOYP 2020 — Top Outstanding Young Person of the World. Finalista entre os 10 melhores mentores e os 10 melhores investidores do Brasil pela Associação Brasileira de Startups. Idealizador do primeiro reality de empreendedorismo de impacto do país, ao lado de Cris Arcangeli. TEDx Speaker. Atuou presencialmente em todos os estados brasileiros — usando inovação, M&A e tecnologia como ferramentas reais de transformação em favelas e territórios vulneráveis.',
-    tags: ['Inovação & Tecnologia', 'M&A · ESG', 'Impacto Social'],
+    bio: 'TOYP 2020 — Top Outstanding Young Person of the World. Co-fundador do G10 Favelas. Finalista entre os 10 melhores mentores e investidores do Brasil pela Associação Brasileira de Startups. Idealizador do primeiro reality de empreendedorismo de impacto do país, ao lado de Cris Arcangeli. TEDx Speaker. Atuou em todos os estados brasileiros — usando inovação, M&A e tecnologia como ferramentas reais de transformação em territórios vulneráveis.',
+    tags: ['Inovação & Tecnologia', 'Co-founder G10 Favelas'],
   },
   {
     idx: 1,
