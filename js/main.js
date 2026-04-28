@@ -125,10 +125,18 @@ dots.forEach((d, i) => {
   const sticky = document.getElementById('speakers-sticky');
   if (!sticky) return;
 
+  // Hide swipe hint after first interaction
+  const swipeHint = document.querySelector('.swipe-hint');
+  let hintDismissed = false;
+
   // Sync dots when user swipes
   sticky.addEventListener('scroll', () => {
     const idx = Math.round(sticky.scrollLeft / sticky.offsetWidth);
     showSpeaker(idx);
+    if (!hintDismissed && sticky.scrollLeft > 10) {
+      hintDismissed = true;
+      if (swipeHint) swipeHint.classList.add('hidden');
+    }
   }, { passive: true });
 
   // Dots click → scroll to slide
