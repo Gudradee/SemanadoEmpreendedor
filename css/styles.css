@@ -299,6 +299,15 @@ body {
   z-index: 0;
 }
 
+/* Dia 4: dois palestrantes — card mais largo e imagem centralizada */
+.spk-page[data-idx="3"] .photo-card {
+  width: 82%;
+  aspect-ratio: 3 / 4;
+}
+.spk-page[data-idx="3"] .photo-card img {
+  object-position: center 20%;
+}
+
 .photo-card.photo-blurred { filter: blur(28px); }
 
 /* ── Suspense: convidado ainda não revelado ── */
@@ -628,6 +637,15 @@ body {
   .dot {
     width: 7px;
     height: 7px;
+  }
+
+  /* Dia 4: ajuste do painel foto para dois palestrantes */
+  .spk-page[data-idx="3"] .split-left:has(.photo-panel),
+  .spk-page[data-idx="3"] .split-right:has(.photo-panel) {
+    height: 60%;
+  }
+  .spk-page[data-idx="3"] .photo-card img {
+    object-position: center 20%;
   }
 
   /* Dica de swipe — some após interação */
