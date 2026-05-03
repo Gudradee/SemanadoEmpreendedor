@@ -181,10 +181,10 @@ const SPEAKER_DATA = [
   },
   {
     idx: 3,
-    name: 'Paulo Rogério Nunes',
-    role: 'Estratégia, Diversidade & Futurismo',
-    bio: 'Autor de "Oportunidades Invisíveis" — livro pioneiro sobre Diversidade e Inovação no Brasil. Cofundador da aceleradora Vale do Dendê e da AFAR Ventures. Um dos 100 mais inovadores fora do Vale do Silício (Rest of the World). Palestrante no SXSW e no Obama Foundation Summit, convidado por Barack Obama. Projetos com Google, Netflix, Disney, Spotify e Natura & Co.',
-    tags: ['Diversidade & Inovação', 'Futurismo', 'ESG'],
+    name: 'Paulo Rogério Nunes & Geovana Borges',
+    role: 'Inovação, Transformação & Impacto Social',
+    bio: 'Paulo Rogério — autor de "Oportunidades Invisíveis", cofundador da Vale do Dendê e da AFAR Ventures. Palestrante no SXSW e no Obama Foundation Summit, convidado por Barack Obama. Geovana Borges — Diretora na CUFA, liderou a Taça das Favelas com impacto direto em mais de 600 mil jovens. Juntos, falarão sobre as inovações e transformações que estão redesenhando o mercado.',
+    tags: ['Inovação', 'Transformação', 'Impacto Social'],
   },
   {
     idx: 4,
